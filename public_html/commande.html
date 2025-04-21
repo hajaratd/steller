@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Commander des cartes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      background-color: #f8f9fc;
+      color: #333;
+    }
+    .form-box {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>🛒 Commander votre jeu de cartes</h2>
+    <!--form action="mailto:aithajar702@gmail.com" method="POST" enctype="text/plain">
+
+    <!form id="commandeForm"-->
+    <form action="https://formspree.io/f/mrbqzzjd" method="POST" style="max-width: 600px; margin: 40px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <label>Nom complet :</label>
+        <input type="text" name="nom"  required>
+  
+        <label>Numéro de téléphone :</label>
+        <input type="number" name="num" required>
+  
+        <label>Adresse de livraison :</label>
+        <textarea name="adresse" rows="4" required></textarea>
+  
+        <label>Quantité :</label>
+        <input type="number" name="quantite" min="1" value="1" required>
+  
+        <button type="submit">📦 Commander</button>
+      </form>
+    </div>
+  
+  </body>
+  <!--form id="commandeForm">
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="adresse" placeholder="Adresse de livraison" required></textarea>
+    <input type="number" name="quantite" placeholder="Quantité" min="1" value="1" required>
+    <button type="submit">📦 Commander</button>
+  </form>
+  
+  <script>
+    document.getElementById('commandeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      const form = e.target;
+      const data = {
+        nom: form.nom.value,
+        email: form.num.value,
+        adresse: form.adresse.value,
+        quantite: form.quantite.value
+      };
+  
+      fetch('https://script.google.com/macros/s/AKfycbw9rk-w0jPnQ-e5kdVuC2KF1kMmE0ul3sPo11BOmkVLCzv-7TMmYrV5FYM0jo1ACgy5/exec',
+       {
+        method: 'POST',
+        body: JSON.stringify(data)
+      })
+      .then(res => res.json())
+      .then(res => alert(res.message))
+      .catch(err => alert("Erreur : " + err));
+  });
+</script-->
+
+  </html>
+  
