@@ -61,36 +61,6 @@
     </div>
   
   </body>
-  <!--form id="commandeForm">
-    <input type="text" name="nom" placeholder="Nom" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="adresse" placeholder="Adresse de livraison" required></textarea>
-    <input type="number" name="quantite" placeholder="Quantité" min="1" value="1" required>
-    <button type="submit">📦 Commander</button>
-  </form>
-  
-  <script>
-    document.getElementById('commandeForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-  
-      const form = e.target;
-      const data = {
-        nom: form.nom.value,
-        email: form.num.value,
-        adresse: form.adresse.value,
-        quantite: form.quantite.value
-      };
-  
-      fetch('https://script.google.com/macros/s/AKfycbw9rk-w0jPnQ-e5kdVuC2KF1kMmE0ul3sPo11BOmkVLCzv-7TMmYrV5FYM0jo1ACgy5/exec',
-       {
-        method: 'POST',
-        body: JSON.stringify(data)
-      })
-      .then(res => res.json())
-      .then(res => alert(res.message))
-      .catch(err => alert("Erreur : " + err));
-  });
-</script-->
-
+ 
   </html>
   

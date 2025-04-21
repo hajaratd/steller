@@ -39,11 +39,19 @@ const questions = [
 	  question: "Quel est le numéro atomique de l'élément carbone ?",
 	  reponse: "6"
 	},
+	{ question: "Quel est la famille de l'élément sodium ?", reponse: "Alcalins" },
 	{
 	  question: "Quel est le nom de l'élément avec le symbole Ag ?",
 	  reponse: "Argent"
-	}
+	},
+	{ question: "Quel est le bloc de l'élément carbone ?", reponse: "Bloc p" },
+
+	{ question: "Quel est le bloc de l'élément fer ?", reponse: "Bloc d" },
+	{ question: "Quel est la famille de l'élément néon ?", reponse: "Gaz nobles" },
+	 { question: "Quel est le nom du bloc qui contient les éléments de la colonne 3 à 12 ?", reponse: "Bloc d" },
+
   ];
+  
   
   let currentQuestion = 0;
   let score = 0;
@@ -68,4 +76,16 @@ const questions = [
 	  document.getElementById("reponse").value = "";
 	}
   });
-  
+  function scrollLeft() {
+    document.getElementById('playlist').scrollBy({
+      left: -320,
+      behavior: 'smooth'
+    });
+  }
+
+  function scrollRight() {
+    document.getElementById('playlist').scrollBy({
+      left: 320,
+      behavior: 'smooth'
+    });
+  }
