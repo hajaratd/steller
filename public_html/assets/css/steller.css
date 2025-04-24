@@ -11729,3 +11729,59 @@ pre {
 .right-arrow {
   right: 10px;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 15px;
+  padding: 20px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.masonry-item img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.caption {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+
+
+
+
